@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import Register from './pages/Register'
 
 function App() {
 
   return (
-   <div></div>
+   <div>
+    <Register />
+   </div>
   )
 }
 
