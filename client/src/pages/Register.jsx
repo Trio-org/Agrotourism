@@ -5,14 +5,22 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import "animate.css/animate.compat.css"
 import ScrollAnimation from "react-animate-on-scroll";
-
+import { Link } from "react-router-dom";
+import agroimg from '../assets/illustrations/agro1.jpg'
 const Register = () => {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [phone, setPhone] = useState("");
+  // const [username, setUsername] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [phone, setPhone] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+  const [formdata,setformdata]=useState({})
+  function handleChange(e) {
+    setformdata({
+      ...formdata,
+      [e.target.id]: e.target.value,
+    });
+    console.log(formdata);
+  }
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -25,17 +33,17 @@ const Register = () => {
     console.log("Form submitted", { username, email, password, phone });
   };
   return (
-    <div className="min-h-screen flex items-center justify-center  md:bg-gray-50 relative">
+    <div className="min-h-screen flex items-center justify-center  md:bg-gray-50  relative">
       <div className="w-full lg:max-w-5xl md:shadow-xl rounded-xl  h-full flex" >
         <div className="w-1/2 hidden md:flex overflow-hidden">
           <img
-            src="https://www.hotelierindia.com/cloud/2023/07/21/image-2.png"
+            src={agroimg}
             className="object-cover h-full w-full rounded-l-xl hover:scale-105 transition-all duration-300"
             alt=""
           />
         </div>
         <div className="md:bg-white p-8 rounded-lg w-full md:w-1/2 rounded-r-xl ">
-          <h1 className="text-2xl font-bold mb-6 text-[#47a15d] text-center">
+          <h1 className="text-2xl font-bold mb-6 text-[#009a74] text-center">
             Register
           </h1>
           <form onSubmit={handleSubmit} className="flex flex-col gap-3">
@@ -44,14 +52,14 @@ const Register = () => {
                 htmlFor="username"
                 className="text-gray-700 font-bold "
               >
-                <FaUser size={25} style={{fill:"#47a15d"}}/>
+                <FaUser size={25} style={{fill:"#009a74"}}/>
               </label>
               <input
                 type="text"
                 id="username"
                 name="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                value={formdata.username}
+                onChange={handleChange}
                 required
                 placeholder="username"
                 className="w-full p-2 outline-none  rounded" 
@@ -62,15 +70,15 @@ const Register = () => {
                 htmlFor="email"
                 className=" text-gray-700 font-bold "
               >
-                <CiMail size={30} style={{fill:"#47a15d"}}/>
+                <CiMail size={30} style={{fill:"#009a74"}}/>
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={formdata.email}
+                onChange={handleChange}
                 required
                 className="w-full p-2 outline-none  rounded"
               />
@@ -80,16 +88,16 @@ const Register = () => {
                 htmlFor="password"
                 className="text-gray-700 font-bold"
               >
-                <RiLockPasswordFill size={25} style={{fill:"#47a15d"}}/>
+                <RiLockPasswordFill size={25} style={{fill:"#009a74"}}/>
 
               </label>
               <input
                 type="password"
                 id="password"
                 name="password"
-                value={password}
+                value={formdata.password}
                 placeholder="Password"
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={handleChange}
                 required
                 className="w-full p-2 outline-none  rounded"
               />
@@ -99,13 +107,14 @@ const Register = () => {
                 htmlFor="phone"
                 className="text-gray-700 font-bold"
               >
-                <FaPhoneAlt size={25} style={{fill:"#47a15d"}}/>
+                <FaPhoneAlt size={25} style={{fill:"#009a74"}}/>
               </label>
               <input
               placeholder="Phone number"
+              id="phone"
                 className="w-full p-2 outline-none  rounded"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                value={formdata.phone}
+                onChange={handleChange}
               />
             </div>
             {errorMessage && (
@@ -113,16 +122,16 @@ const Register = () => {
             )}
             <button
               type="submit"
-              className="w-full bg-[#47a15d] hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition-all duration-200"
+              className="w-full bg-[#009a74] bg-opacity-90 hover:bg-opacity-100 text-white font-bold py-2 px-4 rounded-lg transition-all duration-200"
             >
               Register
             </button>
-            <button
-              type="submit"
-              className="w-full border border-[#47a15d]  hover:text-green-900 text-[#47a15dad] mt-2 font-bold py-2 px-4 rounded-lg transition-all duration-200"
+            <Link
+              to={'/login'}
+              className="w-full text-center border border-[#009a74]  hover:text-green-900 text-[#009a74] mt-2 font-bold py-2 px-4 rounded-lg transition-all duration-200"
             >
               Login
-            </button>
+            </Link>
           </form>
         </div>
       </div>
