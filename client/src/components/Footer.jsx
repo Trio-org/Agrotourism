@@ -48,7 +48,7 @@ const Footer = () => {
   //   </footer>
   // )
   return (
-    <footer class="bg-white ">
+    <footer class="bg-white w-full ">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
@@ -131,7 +131,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                 Legal
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">

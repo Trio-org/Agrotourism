@@ -1,18 +1,31 @@
 import React, { useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaOpencart, FaStar } from "react-icons/fa6";
-import { IoMdArrowDropleft } from "react-icons/io";
-import { IoMdArrowDropright } from "react-icons/io";
+import {
+  FaBath,
+  FaBed,
+  FaChair,
+  FaMapMarkedAlt,
+  FaMapMarkerAlt,
+  FaParking,
+  FaShare,
+} from "react-icons/fa";
+import { FaPersonSwimming } from "react-icons/fa6";
+import { FaCalendarDays } from "react-icons/fa6";
+
 import agroimg from "../assets/illustrations/agro1.jpg";
-import Footer from '../components/Footer'
+import Footer from "../components/Footer";
 import landscape1 from "../assets/gallery/landscape1.jpg";
 import landscape2 from "../assets/gallery/landscape2.jpg";
 import landscape3 from "../assets/gallery/landscape3.jpg";
 import TourCard from "../components/TourCard";
 import { Link } from "react-router-dom";
+import { MdFastfood } from "react-icons/md";
+
 import ProductCard from "../components/ProductCard";
 import ProductComment from "../components/ProductComment";
-const ProductDetails = () => {
+import FarmComment from "../components/FarmComment";
+const TourDetails = () => {
   const images = [landscape1, landscape2, landscape3];
   const [heroimg, setheroimg] = useState(null);
   const tours_data = [
@@ -86,29 +99,46 @@ const ProductDetails = () => {
                 name=""
                 placeholder="0"
                 id=""
-                className="border w-1/5 p-1 text-center focus:outline-blue-400"
+                className="border w-1/5 sm:w-1/6 p-1 text-center rounded-full focus:outline-blue-400"
               />
-              <span>Quantity</span>
+              <span>Persons</span>
             </div>
-            <div className="flex gap-4 justify-start items-center mt-2 p-3">
-              <button className="px-3 py-2 bg-blue-600 rounded-lg bg-opacity-90 hover:bg-opacity-100 text-white font-semibold flex items-center gap-1">
-                <FaOpencart size={20} />
-                <span>Add to cart</span>
+            <div className="flex gap-4 justify-start items-center mt-2 px-1 py-2">
+              <button className="px-3 py-2 bg-green-600 rounded-lg bg-opacity-90 hover:bg-opacity-100 text-white font-semibold flex items-center gap-1">
+                <span>Book now</span>
               </button>
-              <button className="px-5 py-2 bg-green-700 bg-opacity-90 rounded-lg shadow-lg hover:bg-opacity-100 text-white font-semibold">
+              {/* <button className="px-5 py-2 bg-green-700 bg-opacity-90 rounded-lg shadow-lg hover:bg-opacity-100 text-white font-semibold">
                 Buy now
-              </button>
+              </button> */}
             </div>
             <div className="">
-              <h2 className="font-semibold text-slate-800 text-lg">
-                Product Details
-              </h2>
+              <h2 className="font-semibold text-slate-800 text-lg">Details</h2>
               <p className="w-full text-justify mt-2 text-sm text-gray-700 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
                 dolore minus ad dolor veniam, incidunt exercitationem, placeat
                 ut dicta consequatur est voluptatum officia similique autem
                 provident modi temporibus debitis ipsa.
               </p>
+            </div>
+            <div className="">
+              <h1 className="capitalize font-semibold text-lg text-slate-800">
+                Benefits
+              </h1>
+              <ul className="flex flex-col items-center sm:flex-row gap-2 mx-3 sm:gap-4 sm:py-2">
+                <li className="flex items-center gap-1">
+                  <FaPersonSwimming className="text-blue-600" />
+                  <span className="text-sm">Swimming pool</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  {" "}
+                  <MdFastfood className="text-green-600" />
+                  <span className="text-sm">Food included</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <FaCalendarDays className="text-slate-600" />
+                  <span className="text-sm">2 days</span>
+                </li>
+              </ul>
             </div>
             <div className="flex flex-col gap-2 ">
               <h2 className="font-semibold text-lg text-slate-800">Rating</h2>
@@ -172,11 +202,11 @@ const ProductDetails = () => {
         </div>
         <div className="flex flex-col gap-5 items-center">
           <h1 className="text-center font-semibold text-4xl text-slate-700">
-            similar products
+            Other packages
           </h1>
-          <div className="w-full flex flex-col items-center md:flex-row gap-3 justify-center p-2">
+          <div className="w-full flex flex-col items-center md:flex-row gap-5 justify-center p-2">
             {tours_data.map((tour) => (
-              <ProductCard tour={tour} />
+              <TourCard tour={tour} />
             ))}
           </div>
           <div className="flex justify-center items-center">
@@ -186,11 +216,17 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-2 mb-5">
-          <h1 className="font-semibold w-full text-slate-800 text-3xl pt-4 border-t border-gray-300 text-center">Reviews</h1>
-          
+          <h1 className="font-semibold w-full text-slate-800 text-3xl pt-4 border-t border-gray-300 text-center">
+            Reviews
+          </h1>
+
           <div className="w-full md:w-3/4 flex flex-col gap-2 md:gap-4  p-2 md:p-4">
             <div className="w-full flex gap-2">
-              <input type="text" className="w-full  p-2  outline-blue-500  rounded-lg" placeholder="Add your comment.."/>
+              <input
+                type="text"
+                className="w-full  p-2  outline-blue-500 border rounded-lg"
+                placeholder="Add your comment.."
+              />
               <button className="px-2 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -208,11 +244,10 @@ const ProductDetails = () => {
                 </svg>
               </button>
             </div>
-            <div className="w-full flex flex-col items-center py-2 overflow-y-auto max-h-[300px]   border" >
-              <ProductComment />
-              <ProductComment />
-              <ProductComment />
-              <ProductComment />
+            <div className="w-full flex flex-col bg-gray-50 items-center py-2 overflow-y-auto max-h-[200px] mt-3 sm:max-h-[300px]   border">
+              <FarmComment />
+              <FarmComment />
+              <FarmComment />
             </div>
           </div>
         </div>
@@ -222,4 +257,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default TourDetails;

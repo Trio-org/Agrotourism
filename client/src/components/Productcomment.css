@@ -1,9 +1,9 @@
 ::-webkit-scrollbar {
     /* background:; */
     width: 6px;
-    display:none;
+    /* display:none; */
 }
 ::-webkit-scrollbar-thumb {
-    background: #3b3b3b;
+    background: #0ea71b;
     border-radius: 5px;
 }

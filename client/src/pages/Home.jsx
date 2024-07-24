@@ -6,6 +6,8 @@ import CubeLoader from '../utils/loader1/CubeLoader'
 import ProductDetails from './ProductDetails'
 import Footer from '../components/Footer'
 import ContactUs from './ContactUs'
+import ProductCard from '../components/ProductCard'
+import TourDetails from './TourDetails'
 
 const Home = () => {
   const tours_data=[
@@ -29,14 +31,17 @@ const Home = () => {
   ]
   return (
     <div>
-      <ContactUs />
+      {/* <ContactUs /> */}
+      {/* <div className="flex flex-wrap gap-5 justify-center p-3">
+        {tours_data.map((tour)=><ProductCard tour={tour}/>)}
+      </div> */}
       {/* <div className="flex flex-wrap gap-5 justify-center p-3">
         {tours_data.map((tour)=><TourCard tour={tour}/>)}
-      </div>
-      <Gallery /> */}
+      </div> */}
+      {/* <Gallery /> */}
       {/* <ProductDetails /> */}
       {/* <CubeLoader /> */}
-      
+      <TourDetails />
     </div>
   )
 }
