@@ -4,6 +4,8 @@ import agroimg from '../assets/illustrations/agro1.jpg'
 import Gallery from '../components/Gallery'
 import CubeLoader from '../utils/loader1/CubeLoader'
 import ProductDetails from './ProductDetails'
+import Footer from '../components/Footer'
+import ContactUs from './ContactUs'
 
 const Home = () => {
   const tours_data=[
@@ -27,12 +29,14 @@ const Home = () => {
   ]
   return (
     <div>
+      <ContactUs />
       {/* <div className="flex flex-wrap gap-5 justify-center p-3">
         {tours_data.map((tour)=><TourCard tour={tour}/>)}
       </div>
       <Gallery /> */}
       {/* <ProductDetails /> */}
       {/* <CubeLoader /> */}
+      
     </div>
   )
 }
