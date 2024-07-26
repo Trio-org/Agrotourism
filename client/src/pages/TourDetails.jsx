@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaOpencart, FaStar } from "react-icons/fa6";
+import {Toaster,toast} from 'sonner'
+
 import {
   FaBath,
   FaBed,
@@ -58,7 +60,8 @@ const TourDetails = () => {
     alert("Product bought!");
   };
   return (
-    <div className="max-w-screen-2xl box-border overflow-x-hidden  flex flex-col  items-center">
+    <div className="max-w-screen-2xl box-border overflow-x-hidden  flex flex-col  items-center relative">
+      <Toaster position="top-right" richColors/>
       <div className="flex flex-col gap-2">
         <div className="max-w-6xl md:flex mt-2 md:mt-10 ">
           <div className=" overflow-x-hidden  md:w-1/2 p-2">
@@ -227,7 +230,7 @@ const TourDetails = () => {
                 className="w-full  p-2  outline-blue-500 border rounded-lg"
                 placeholder="Add your comment.."
               />
-              <button className="px-2 ">
+              <button className="px-2 " onClick={()=>toast.success("sent")}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
