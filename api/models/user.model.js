@@ -6,6 +6,8 @@ const userSchema = new mongoose.Schema({
     role: { type: String, enum: ['Farmer', 'Tourist', 'Corporate', 'Admin'], required: true },
     email: { type: String, required: true, unique: true },
     phone:{type:Number,required:true,unique:true},
+    // refreshToken: { type: String }
 });
 
-module.exports = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
+export default User

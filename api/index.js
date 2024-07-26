@@ -3,11 +3,13 @@ import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import cors from 'cors'
 import helmet from 'helmet'
-
+import cookieParser from 'cookie-parser'
+import authrouter from './routers/auth.route.js'
 const app = express()
 dotenv.config()
 app.use(json())
 app.use(helmet())
+app.use(cookieParser())
 
 
 const corsOptions = {
@@ -34,6 +36,7 @@ mongoose.connection.on('disconnected', () => {
 app.get('/', (req, res) => {
     res.send('hello umbi!')
 })
+app.use('/auth',authrouter)
 
 //middleware
 // app.use('/api/auth', RouteName)
