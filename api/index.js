@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser'
 import authrouter from './routers/auth.route.js'
 import logger from './logs/logErr.js'
 import farmerroute from './routers/farm.route.js'
+import productrouter from './routers/product.route.js'
 const app = express()
 dotenv.config()
 app.use(json())
@@ -46,6 +47,7 @@ app.get('/', (req, res) => {
 })
 app.use('/auth',authrouter)
 app.use('/farmer',farmerroute)
+app.use('/farmer',productrouter)
 // Middleware
 // app.use('/api/auth', RouteName)
 
