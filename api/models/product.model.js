@@ -6,6 +6,7 @@ const productSchema = new mongoose.Schema({
     price: { type: Number, required: true },
     offerprice:{type:Number},
     images: {type:Array,required:true},
+    category:{ type: String, enum: ['organic', 'inorganic'],default:'organic',required:true },
     owner: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
 },{timestamps:true});
 

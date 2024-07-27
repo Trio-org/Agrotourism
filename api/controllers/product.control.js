@@ -2,7 +2,7 @@ import Product from "../models/product.model.js";
 import mongoose from "mongoose";
 export const productcreation=async(req,res,next)=>{
     const user=req.body.curruser.id
-    const {name, description, price,offerprice, images } = req.body;
+    const {name, description, price,offerprice,category, images } = req.body;
 
     try {
         console.log(user)
@@ -11,6 +11,7 @@ export const productcreation=async(req,res,next)=>{
             description,
             price,
             offerprice,
+            category,
             images,
             owner: user
         });
@@ -29,10 +30,11 @@ export const updateproduct=async(req,res,next)=>{
     
     if(!product) return res.status(400).json({msg:"product not exist"})
     if(req.body.curruser.id !== product.owner.toString()) return res.status(400).json({msg:"you cannot edit others product"})
-    const {name, description, price,offerprice, images } = req.body;
+    const {name, description, price,offerprice,category, images } = req.body;
     const updatedproduct=await Product.findByIdAndUpdate(req.params.id,{$set:{
         name,
         description,
+        category,
         price,
         offerprice,
         images
@@ -77,6 +79,17 @@ export const getproductlisting=async(req,res,next)=>{
         // const documentToFind = { _id: new ObjectId(req.params.id) };
         if(req.params.id !== req.body.curruser.id) return res.status(400).json({msg:"forbidden"})
         const showlisting=await Product.find({owner:id})
+        console.log(showlisting)
+        res.status(200).json(showlisting)
+    } catch (err) {
+        console.error(err.message)
+        res.status(500).send("server error")
+    }
+}
+export const getproductbycategory=async(req,res,next)=>{
+    try {
+        console.log(req.params.category)
+        const showlisting=await Product.find({category:req.params.category})
         console.log(showlisting)
         res.status(200).json(showlisting)
     } catch (err) {
