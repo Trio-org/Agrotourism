@@ -49,7 +49,6 @@ export const updateproduct=async(req,res,next)=>{
 export const deleteproduct=async(req,res,next)=>{
     try {
         const product =await Product.findById(req.params.id)
-    
     if(!product) return res.status(400).json({msg:"product not exist"})
     if(req.body.curruser.id !== product.owner.toString()) return res.status(400).json({msg:"you cannot delete others product"})
     await Product.findByIdAndDelete(req.params.id)
