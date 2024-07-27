@@ -147,3 +147,14 @@
 2024-07-27T09:12:57.909Z [info]: Server listening on port 8001
 2024-07-27T09:12:58.940Z [info]: Database connected
 2024-07-27T09:13:03.618Z [info]: ::1 - - [27/Jul/2024:09:13:03 +0000] "POST /farmer/updateproduct/66a4b4bc9ff4d66dd912f87c HTTP/1.1" 400 40 "-" "PostmanRuntime/7.40.0"
+2024-07-27T09:13:27.773Z [info]: Server listening on port 8001
+2024-07-27T09:13:28.425Z [info]: Database connected
+2024-07-27T09:13:29.601Z [info]: ::1 - - [27/Jul/2024:09:13:29 +0000] "POST /farmer/updateproduct/66a4b4bc9ff4d66dd912f87c HTTP/1.1" 200 242 "-" "PostmanRuntime/7.40.0"
+2024-07-27T09:14:48.569Z [info]: ::1 - - [27/Jul/2024:09:14:48 +0000] "POST /farmer/updateproduct/66a4b4bc9ff4d66dd912f87c HTTP/1.1" 200 241 "-" "PostmanRuntime/7.40.0"
+2024-07-27T09:16:23.207Z [info]: Server listening on port 8001
+2024-07-27T09:16:25.868Z [info]: Database connected
+2024-07-27T09:16:30.593Z [info]: Server listening on port 8001
+2024-07-27T09:16:31.073Z [info]: Server listening on port 8001
+2024-07-27T09:16:31.684Z [info]: Database connected
+2024-07-27T09:19:24.533Z [info]: Server listening on port 8001
+2024-07-27T09:19:25.594Z [info]: Database connected
