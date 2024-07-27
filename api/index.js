@@ -4,14 +4,16 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
+import cookieParser from 'cookie-parser'
 import authrouter from './routers/auth.route.js'
 import logger from './logs/logErr.js'
+import farmerroute from './routers/farm.route.js'
 const app = express()
 dotenv.config()
 app.use(json())
 app.use(helmet())
 
-
+app.use(cookieParser());
 const corsOptions = {
     origin: process.env.CORS_ORIGIN || '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -43,7 +45,7 @@ app.get('/', (req, res) => {
     res.send('hello umbi!')
 })
 app.use('/auth',authrouter)
-
+app.use('/farmer',farmerroute)
 // Middleware
 // app.use('/api/auth', RouteName)
 

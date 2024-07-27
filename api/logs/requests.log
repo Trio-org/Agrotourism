@@ -38,3 +38,57 @@
 2024-07-26T20:08:27.020Z [info]: Database connected
 2024-07-26T20:08:46.736Z [info]: Server listening on port 8001
 2024-07-26T20:08:47.418Z [info]: Database connected
+2024-07-27T07:26:29.402Z [info]: Server listening on port 8001
+2024-07-27T07:26:38.742Z [info]: Database connected
+2024-07-27T07:29:09.613Z [info]: Server listening on port 8001
+2024-07-27T07:29:10.906Z [info]: Database connected
+2024-07-27T07:38:13.495Z [info]: Server listening on port 8001
+2024-07-27T07:38:14.385Z [info]: Database connected
+2024-07-27T07:39:52.165Z [info]: Server listening on port 8001
+2024-07-27T07:39:53.901Z [info]: Database connected
+2024-07-27T07:40:29.817Z [info]: Server listening on port 8001
+2024-07-27T07:40:30.505Z [info]: Database connected
+2024-07-27T07:42:28.768Z [info]: Server listening on port 8001
+2024-07-27T07:42:30.204Z [info]: Database connected
+2024-07-27T07:44:48.144Z [info]: ::1 - - [27/Jul/2024:07:44:48 +0000] "POST /auth/login HTTP/1.1" 200 134 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:44:52.400Z [info]: ::1 - - [27/Jul/2024:07:44:52 +0000] "POST /farmer/createfarm HTTP/1.1" 500 1187 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:45:24.373Z [info]: Server listening on port 8001
+2024-07-27T07:45:25.577Z [info]: Database connected
+2024-07-27T07:45:26.984Z [info]: ::1 - - [27/Jul/2024:07:45:26 +0000] "POST /farmer/createfarm HTTP/1.1" 500 1186 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:46:28.938Z [info]: Server listening on port 8001
+2024-07-27T07:46:29.646Z [info]: Database connected
+2024-07-27T07:46:32.124Z [info]: ::1 - - [27/Jul/2024:07:46:32 +0000] "POST /farmer/createfarm HTTP/1.1" 500 1186 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:47:41.495Z [info]: Server listening on port 8001
+2024-07-27T07:47:42.720Z [info]: Database connected
+2024-07-27T07:47:49.757Z [info]: ::1 - - [27/Jul/2024:07:47:49 +0000] "POST /farmer/createfarm HTTP/1.1" 500 1109 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:49:07.275Z [info]: Server listening on port 8001
+2024-07-27T07:49:11.098Z [info]: ::1 - - [27/Jul/2024:07:49:11 +0000] "POST /farmer/createfarm HTTP/1.1" 300 22 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:49:11.955Z [info]: Database connected
+2024-07-27T07:49:24.800Z [info]: ::1 - - [27/Jul/2024:07:49:24 +0000] "POST /auth/login HTTP/1.1" 200 134 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:49:30.903Z [info]: ::1 - - [27/Jul/2024:07:49:30 +0000] "POST /farmer/createfarm HTTP/1.1" 300 22 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:50:43.104Z [info]: Server listening on port 8001
+2024-07-27T07:50:44.649Z [info]: Database connected
+2024-07-27T07:51:07.216Z [info]: ::1 - - [27/Jul/2024:07:51:07 +0000] "POST /farmer/createfarm HTTP/1.1" - - "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:51:12.487Z [info]: ::1 - - [27/Jul/2024:07:51:12 +0000] "POST /auth/login HTTP/1.1" 200 134 "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:54:30.715Z [info]: ::1 - - [27/Jul/2024:07:54:30 +0000] "POST /farmer/createfarm HTTP/1.1" - - "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:56:25.519Z [info]: ::1 - - [27/Jul/2024:07:56:25 +0000] "POST /farmer/createfarm HTTP/1.1" - - "-" "PostmanRuntime/7.40.0"
+2024-07-27T07:56:40.588Z [info]: Server listening on port 8001
+2024-07-27T07:56:41.511Z [info]: Database connected
+2024-07-27T07:58:50.495Z [info]: Server listening on port 8001
+2024-07-27T07:58:51.448Z [info]: Database connected
+2024-07-27T07:59:05.367Z [info]: Server listening on port 8001
+2024-07-27T07:59:06.039Z [info]: Database connected
+2024-07-27T07:59:18.200Z [info]: Server listening on port 8001
+2024-07-27T07:59:18.871Z [info]: Database connected
+2024-07-27T08:01:12.093Z [info]: Server listening on port 8001
+2024-07-27T08:01:12.999Z [info]: Database connected
+2024-07-27T08:01:14.340Z [info]: Server listening on port 8001
+2024-07-27T08:01:14.973Z [info]: Database connected
+2024-07-27T08:01:39.204Z [info]: Server listening on port 8001
+2024-07-27T08:01:39.889Z [info]: Database connected
+2024-07-27T08:02:02.809Z [info]: Server listening on port 8001
+2024-07-27T08:02:03.488Z [info]: Database connected
+2024-07-27T08:02:05.067Z [info]: ::1 - - [27/Jul/2024:08:02:05 +0000] "POST /farmer/createfarm HTTP/1.1" 500 12 "-" "PostmanRuntime/7.40.0"
+2024-07-27T08:02:36.473Z [info]: Server listening on port 8001
+2024-07-27T08:02:37.813Z [info]: Database connected
+2024-07-27T08:03:18.243Z [info]: Server listening on port 8001
