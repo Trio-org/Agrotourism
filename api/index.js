@@ -29,10 +29,7 @@ app.use(morgan('combined', { stream: { write: message => logger.info(message.tri
 
 const main = async () => {
     try {
-        await mongoose.connect(process.env.MONGO, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        })
+        await mongoose.connect(process.env.MONGO)
         logger.info('Database connected');
     } catch (err) {
         logger.error('Database connection error: ' + err.message);

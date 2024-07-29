@@ -321,3 +321,133 @@
 2024-07-27T11:28:49.771Z [info]: ::1 - - [27/Jul/2024:11:28:49 +0000] "GET /consumer/productcategory/organic HTTP/1.1" 200 2 "-" "PostmanRuntime/7.40.0"
 2024-07-27T11:28:56.537Z [info]: ::1 - - [27/Jul/2024:11:28:56 +0000] "GET /consumer/productcategory/inorganic HTTP/1.1" 200 2 "-" "PostmanRuntime/7.40.0"
 2024-07-27T11:29:07.673Z [info]: ::1 - - [27/Jul/2024:11:29:07 +0000] "GET /consumer/getallproducts HTTP/1.1" 200 1056 "-" "PostmanRuntime/7.40.0"
+2024-07-27T11:29:36.268Z [info]: Server listening on port 8001
+2024-07-27T11:29:37.054Z [info]: Database connected
+2024-07-27T11:29:40.726Z [info]: ::1 - - [27/Jul/2024:11:29:40 +0000] "GET /consumer/productcategory/inorganic HTTP/1.1" 200 265 "-" "PostmanRuntime/7.40.0"
+2024-07-27T11:29:48.676Z [info]: ::1 - - [27/Jul/2024:11:29:48 +0000] "GET /consumer/productcategory/organic HTTP/1.1" 200 265 "-" "PostmanRuntime/7.40.0"
+2024-07-27T14:28:39.002Z [warn]: MongoDB disconnected!
+2024-07-27T14:37:41.642Z [warn]: MongoDB disconnected!
+2024-07-27T15:56:07.881Z [warn]: MongoDB disconnected!
+2024-07-27T16:55:03.117Z [warn]: MongoDB disconnected!
+2024-07-29T09:57:32.138Z [warn]: MongoDB disconnected!
+2024-07-29T09:59:42.148Z [warn]: MongoDB disconnected!
+2024-07-29T10:05:54.311Z [info]: Server listening on port 8001
+2024-07-29T10:05:56.851Z [info]: Database connected
+2024-07-29T10:14:50.398Z [info]: Server listening on port 8001
+2024-07-29T10:14:53.191Z [info]: Database connected
+2024-07-29T10:15:02.593Z [info]: Server listening on port 8001
+2024-07-29T10:15:03.852Z [info]: Database connected
+2024-07-29T10:16:06.461Z [info]: Server listening on port 8001
+2024-07-29T10:16:07.765Z [info]: Database connected
+2024-07-29T10:17:05.956Z [info]: ::1 - - [29/Jul/2024:10:17:05 +0000] "POST /auth/forgetpass HTTP/1.1" - - "-" "PostmanRuntime/7.40.0"
+2024-07-29T10:18:36.033Z [info]: ::1 - - [29/Jul/2024:10:18:36 +0000] "POST /auth/forgetpass HTTP/1.1" - - "-" "PostmanRuntime/7.40.0"
+2024-07-29T10:19:32.173Z [info]: Server listening on port 8001
+2024-07-29T10:19:34.279Z [info]: Database connected
+2024-07-29T10:20:23.963Z [info]: Server listening on port 8001
+2024-07-29T10:20:25.438Z [info]: Database connected
+2024-07-29T10:21:43.427Z [info]: Server listening on port 8001
+2024-07-29T10:21:46.594Z [info]: Database connected
+2024-07-29T10:22:16.860Z [info]: Server listening on port 8001
+2024-07-29T10:22:18.719Z [info]: Database connected
+2024-07-29T10:22:42.205Z [info]: Server listening on port 8001
+2024-07-29T10:22:43.464Z [info]: Database connected
+2024-07-29T10:22:45.200Z [info]: ::1 - - [29/Jul/2024:10:22:45 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T10:24:31.515Z [info]: Server listening on port 8001
+2024-07-29T10:24:35.599Z [info]: Database connected
+2024-07-29T10:30:42.960Z [info]: Server listening on port 8001
+2024-07-29T10:30:48.130Z [info]: Database connected
+2024-07-29T10:39:09.849Z [info]: Server listening on port 8001
+2024-07-29T10:39:11.549Z [info]: Database connected
+2024-07-29T10:39:20.811Z [info]: Server listening on port 8001
+2024-07-29T10:39:22.954Z [info]: Database connected
+2024-07-29T10:39:27.206Z [info]: Server listening on port 8001
+2024-07-29T10:39:28.497Z [info]: Database connected
+2024-07-29T10:40:01.834Z [info]: Server listening on port 8001
+2024-07-29T10:40:03.014Z [info]: Database connected
+2024-07-29T10:41:21.194Z [info]: Server listening on port 8001
+2024-07-29T10:41:22.626Z [info]: Database connected
+2024-07-29T10:41:23.051Z [info]: ::1 - - [29/Jul/2024:10:41:23 +0000] "POST /auth/getrole HTTP/1.1" 200 6 "-" "PostmanRuntime/7.40.0"
+2024-07-29T10:49:50.525Z [info]: Server listening on port 8001
+2024-07-29T10:49:51.944Z [info]: Database connected
+2024-07-29T10:50:46.575Z [info]: Server listening on port 8001
+2024-07-29T10:50:47.867Z [info]: Database connected
+2024-07-29T10:51:06.797Z [info]: Server listening on port 8001
+2024-07-29T10:51:07.988Z [info]: Database connected
+2024-07-29T10:51:27.834Z [info]: Server listening on port 8001
+2024-07-29T10:51:30.159Z [info]: Database connected
+2024-07-29T10:53:17.013Z [info]: Server listening on port 8001
+2024-07-29T10:53:19.229Z [info]: Database connected
+2024-07-29T10:56:00.180Z [info]: Server listening on port 8001
+2024-07-29T10:56:01.704Z [info]: Database connected
+2024-07-29T10:57:44.133Z [info]: Server listening on port 8001
+2024-07-29T10:57:47.255Z [info]: Database connected
+2024-07-29T10:59:46.352Z [info]: Server listening on port 8001
+2024-07-29T10:59:48.242Z [info]: Server listening on port 8001
+2024-07-29T10:59:49.422Z [info]: Database connected
+2024-07-29T11:04:56.586Z [info]: Server listening on port 8001
+2024-07-29T11:04:58.016Z [info]: Server listening on port 8001
+2024-07-29T11:04:59.260Z [info]: Database connected
+2024-07-29T11:11:30.952Z [info]: Server listening on port 8001
+2024-07-29T11:11:32.419Z [info]: Database connected
+2024-07-29T11:18:19.158Z [info]: Server listening on port 8001
+2024-07-29T11:18:21.209Z [info]: Database connected
+2024-07-29T11:27:11.684Z [info]: Server listening on port 8001
+2024-07-29T11:27:15.591Z [info]: Database connected
+2024-07-29T11:27:40.659Z [info]: Server listening on port 8001
+2024-07-29T11:27:41.804Z [info]: Database connected
+2024-07-29T11:29:02.636Z [info]: Server listening on port 8001
+2024-07-29T11:29:04.772Z [info]: Database connected
+2024-07-29T11:29:52.069Z [info]: Server listening on port 8001
+2024-07-29T11:29:53.407Z [info]: Database connected
+2024-07-29T11:30:09.165Z [info]: Server listening on port 8001
+2024-07-29T11:30:13.028Z [info]: Database connected
+2024-07-29T11:31:05.814Z [info]: Server listening on port 8001
+2024-07-29T11:31:08.765Z [info]: Database connected
+2024-07-29T11:36:10.222Z [info]: Server listening on port 8001
+2024-07-29T11:36:13.402Z [info]: Database connected
+2024-07-29T11:58:56.319Z [info]: Server listening on port 8001
+2024-07-29T11:58:57.946Z [info]: Database connected
+2024-07-29T11:59:11.891Z [info]: Server listening on port 8001
+2024-07-29T11:59:14.082Z [info]: Database connected
+2024-07-29T12:00:10.431Z [info]: Server listening on port 8001
+2024-07-29T12:00:11.706Z [info]: Database connected
+2024-07-29T12:01:31.019Z [info]: Server listening on port 8001
+2024-07-29T12:01:34.448Z [info]: Database connected
+2024-07-29T12:03:23.082Z [info]: Server listening on port 8001
+2024-07-29T12:03:26.165Z [info]: Database connected
+2024-07-29T12:04:33.520Z [info]: Server listening on port 8001
+2024-07-29T12:04:34.705Z [info]: Database connected
+2024-07-29T12:05:40.376Z [info]: Server listening on port 8001
+2024-07-29T12:05:42.785Z [info]: Database connected
+2024-07-29T12:06:22.686Z [info]: Server listening on port 8001
+2024-07-29T12:06:25.067Z [info]: Database connected
+2024-07-29T12:06:28.132Z [info]: Server listening on port 8001
+2024-07-29T12:06:29.742Z [info]: Database connected
+2024-07-29T12:07:00.711Z [info]: ::1 - - [29/Jul/2024:12:07:00 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T12:08:50.249Z [info]: Server listening on port 8001
+2024-07-29T12:08:52.580Z [info]: Database connected
+2024-07-29T12:08:53.872Z [info]: ::1 - - [29/Jul/2024:12:08:53 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T12:10:13.724Z [info]: Server listening on port 8001
+2024-07-29T12:10:15.724Z [info]: Database connected
+2024-07-29T12:10:17.398Z [info]: ::1 - - [29/Jul/2024:12:10:17 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T12:13:34.227Z [info]: Server listening on port 8001
+2024-07-29T12:13:38.301Z [info]: Database connected
+2024-07-29T12:15:41.967Z [info]: Server listening on port 8001
+2024-07-29T12:15:46.099Z [info]: Database connected
+2024-07-29T12:15:49.094Z [info]: ::1 - - [29/Jul/2024:12:15:49 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T12:16:35.321Z [info]: ::1 - - [29/Jul/2024:12:16:35 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T12:20:11.370Z [info]: Server listening on port 8001
+2024-07-29T12:20:13.464Z [info]: Database connected
+2024-07-29T12:20:53.344Z [info]: ::1 - - [29/Jul/2024:12:20:53 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T12:21:20.468Z [info]: Server listening on port 8001
+2024-07-29T12:21:23.366Z [info]: Database connected
+2024-07-29T12:21:24.074Z [info]: ::1 - - [29/Jul/2024:12:21:24 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T12:22:54.255Z [info]: Server listening on port 8001
+2024-07-29T12:22:56.460Z [info]: Database connected
+2024-07-29T12:23:23.884Z [info]: Server listening on port 8001
+2024-07-29T12:23:26.343Z [info]: Database connected
+2024-07-29T12:24:23.931Z [info]: Server listening on port 8001
+2024-07-29T12:24:26.173Z [info]: Database connected
+2024-07-29T12:24:28.104Z [info]: ::1 - - [29/Jul/2024:12:24:28 +0000] "POST /auth/forgetpass HTTP/1.1" 200 4 "-" "PostmanRuntime/7.40.0"
+2024-07-29T12:26:35.028Z [info]: Server listening on port 8001
+2024-07-29T12:26:36.631Z [info]: Database connected
